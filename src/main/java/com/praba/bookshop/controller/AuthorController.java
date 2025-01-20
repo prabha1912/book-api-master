@@ -56,6 +56,8 @@ public class AuthorController {
 		),
 		@ApiResponse(responseCode = "400", content =  {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE)})}
 	)
+	
+	//post mapping
 	@PostMapping
 	public ResponseEntity<Author> save(@Valid @RequestBody Author author) {
 
